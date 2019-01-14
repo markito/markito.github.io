@@ -1,0 +1,5 @@
+<ul>
+{{ range sort .Site.Data.articles.articles "date" "desc" }}
+	<li style="padding-bottom: 10px;"> <strong><a href="{{ .link }}">{{ .title }}</a></strong>,&nbsp;<em>{{ .date }}</em></br></li>
+{{ end }}
+</ul>

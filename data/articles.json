@@ -1,0 +1,77 @@
+{
+   "articles": [
+    {   
+        "date":"2018/12",
+        "title": "Red Hat collaborates with Google, SAP, IBM and others on Knative to deliver hybrid serverless workloads to the enterprise - Red Hat Blog",
+        "link": "https://www.redhat.com/en/blog/red-hat-collaborates-google-and-others-knative-deliver-hybrid-serverless-workloads-enterprise"
+        
+    },
+    {   
+        "date":"2018/07",
+        "title": "State of Serverless in Kubernetes: Knative and OpenShift Cloud Functions - Red Hat OpenShift Blog",
+        "link": "https://blog.openshift.com/state-of-serverless-in-kubernetes-knative-and-openshift-cloud-functions/"
+        
+    },
+    {
+        "date":"2015/12",
+        "title": "An Open Source Reference Architecture For Real-Time Stock Prediction - Pivotal Blog",
+        "link": "https://content.pivotal.io/blog/an-open-source-reference-architecture-for-real-time-stock-prediction"
+    },
+    {
+        "date":"2015/12",
+        "title": "An Open Source Reference Architecture For Real-Time Stock Prediction, InfoQ (Chinese)",
+        "link": "https://www.infoq.cn/article/2015%2F12%2Fopen-source-reference-architectu"
+    },
+    {
+        "date":"2011/07",
+        "title": "Caching strategies for Oracle Service Bus" ,
+        "link": "https://www.oracle.com/technetwork/articles/soa/bus-coherence-caching-421276.html), Oracle Technology Network"
+    },
+    {
+        "date": "2012/08",
+        "title": "Oracle WebLogic RESTful Management Services:  From Command Line to JavaFX" ,
+        "link": "https://www.oracle.com/technetwork/articles/soa/oliveira-wls-rest-javafx-1723982.html"
+    },
+    {
+        "date": "2012/08",
+        "title": "Oracle WebLogic RESTful Management Services:  From Command Line to JavaFX (Japanese)" ,
+        "link": "https://orablogs-jp.blogspot.com/2012/08/oracle-weblogic-restful-management.html"
+    },
+    {
+        "date": "2012/03",
+        "title": "Oracle Enterprise Gateway: Integration with Oracle Service Bus and Oracle Web Services Manager, Oracle Technology Network" ,
+        "link": "https://www.oracle.com/technetwork/articles/soa/oeg-owsm-1562313.html"
+    },
+    {
+        "date": "2014/06",
+        "title": "The Java EE 7 Tutorial: Enterprise Beans, InformIT",
+        "link": "http://www.informit.com/articles/article.aspx?p=2210834"
+    },
+    {
+        "date": "2013/01",
+        "title": "JavaServer Faces Technology: Advanced Concepts, InformIT",
+        "link": "http://www.informit.com/articles/article.aspx?p=2015115"
+    },
+    {
+        "date": "2014/06",
+        "title": "The Java EE 7 Tutorial: Getting Started with Web Applications, InformIT",
+        "link": "http://www.informit.com/articles/article.aspx?p=2210833"
+    },
+    {
+        "date": "2008/03",
+        "title": "SOA in Practice – Part 2 (pt-BR), Java Magazine Ed 63",
+        "link": "https://www.devmedia.com.br/artigo-java-magazine-63-soa-na-pratica-parte-2/11057"
+    },
+    {
+        "date": "2008/02",
+        "title": "SOA in Practice – Part 1 (pt-BR), Java Magazine Ed 62",
+        "link": "https://www.devmedia.com.br/soa-na-pratica-artigo-java-magazine-62/10816"
+    },
+    {
+        "date": "2007/01",
+        "title": "EAI in Practice, Java Magazine Ed 59 (pt-BR)",
+        "link": "https://www.devmedia.com.br/artigo-java-magazine-59-eai-na-pratica/10203"
+    }
+    
+]
+}
