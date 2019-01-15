@@ -5,6 +5,7 @@ languageCode = "en-us"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 disableKinds=["RSS"]
+googleAnalytics = "UA-132475739-1"
 
 [params]
   description = 'Product Manager @ Red Hat'
