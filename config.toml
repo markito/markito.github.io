@@ -8,7 +8,7 @@ disableKinds=["RSS"]
 googleAnalytics = "UA-132475739-1"
 
 [params]
-  description = 'Product Manager @ Red Hat'
+  description = 'Product Management'
   logo = "fa-desktop"
   toc = true
   # logoimage = "images/profile.png"
