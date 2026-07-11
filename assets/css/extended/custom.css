@@ -1,0 +1,415 @@
+/* Increment Magazine-inspired styling for markito.io */
+
+/* Import Inter font for clean sans-serif typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Light mode colors - Increment style */
+:root {
+    --gap: 24px;
+    --content-gap: 24px;
+    --nav-width: 1024px;
+    --main-width: 720px;
+    --header-height: 60px;
+    --footer-height: 60px;
+    --radius: 4px;
+
+    /* Increment-inspired color palette */
+    --theme: rgb(255, 255, 255);
+    --entry: rgb(255, 255, 255);
+    --primary: #191919;
+    --secondary: #707070;
+    --tertiary: #e5e5e5;
+    --content: #191919;
+    --hljs-bg: #f5f5f5;
+    --code-bg: #f5f5f5;
+    --border: #e5e5e5;
+    --accent: #0057FF;
+}
+
+/* Dark mode colors */
+.dark {
+    --theme: #0d0d0d;
+    --entry: #1a1a1a;
+    --primary: #e5e5e5;
+    --secondary: #a0a0a0;
+    --tertiary: #333333;
+    --content: #e5e5e5;
+    --hljs-bg: #1a1a1a;
+    --code-bg: #1a1a1a;
+    --border: #333333;
+    --accent: #3b82f6;
+}
+
+/* Base typography */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: -0.011em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.375rem;
+}
+
+/* Header/Navigation */
+.nav {
+    background: var(--theme);
+    border-bottom: 1px solid var(--border);
+}
+
+#menu a {
+    font-weight: 500;
+    font-size: 0.9375rem;
+    color: var(--secondary);
+    transition: color 0.15s ease;
+}
+
+#menu a:hover,
+#menu .active {
+    color: var(--primary);
+}
+
+.logo a {
+    font-weight: 700;
+    font-size: 1.125rem;
+    letter-spacing: -0.02em;
+}
+
+/* Home info section */
+.home-info {
+    padding: 3rem 0 2rem;
+}
+
+.home-info .entry-content {
+    max-width: 560px;
+    font-size: 1.125rem;
+    color: var(--secondary);
+    line-height: 1.7;
+}
+
+.home-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Post entries */
+.post-entry {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
+    padding: 1.5rem 0;
+    margin-bottom: 0;
+    box-shadow: none;
+}
+
+.post-entry:hover {
+    background: transparent;
+    transform: none;
+    box-shadow: none;
+}
+
+.first-entry {
+    border: none;
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.first-entry:hover {
+    background: transparent;
+    transform: none;
+    box-shadow: none;
+}
+
+.entry-header h2 {
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+    transition: color 0.15s ease;
+}
+
+.post-entry:hover .entry-header h2 {
+    color: var(--accent);
+}
+
+.entry-content {
+    font-size: 0.9375rem;
+    color: var(--secondary);
+    line-height: 1.6;
+}
+
+.entry-footer {
+    font-size: 0.8125rem;
+    color: var(--secondary);
+    margin-top: 0.75rem;
+}
+
+/* Single post styling */
+.post-header {
+    margin-bottom: 2rem;
+}
+
+.post-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+}
+
+.post-meta {
+    font-size: 0.875rem;
+    color: var(--secondary);
+}
+
+.post-content {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+}
+
+.post-content p {
+    margin-bottom: 1.5rem;
+}
+
+.post-content h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.post-content h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Links */
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.post-content a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.post-content a:hover {
+    color: var(--primary);
+}
+
+/* Code blocks */
+code {
+    font-family: 'SF Mono', 'Menlo', 'Monaco', 'Courier New', monospace;
+    font-size: 0.875em;
+    background: var(--code-bg);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+}
+
+pre {
+    background: var(--code-bg);
+    border-radius: 6px;
+    padding: 1rem;
+    overflow-x: auto;
+    line-height: 1.5;
+}
+
+pre code {
+    background: transparent;
+    padding: 0;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 3px solid var(--accent);
+    padding-left: 1.25rem;
+    margin: 1.5rem 0;
+    color: var(--secondary);
+    font-style: italic;
+}
+
+/* Footer */
+.footer {
+    border-top: 1px solid var(--border);
+    padding: 1.5rem 0;
+    font-size: 0.875rem;
+    color: var(--secondary);
+}
+
+/* Page header for archive/tags/categories */
+.page-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.page-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Social icons */
+.social-icons a {
+    color: var(--secondary);
+    transition: color 0.15s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary);
+}
+
+/* Theme toggle button */
+#theme-toggle {
+    padding: 4px;
+    border-radius: 4px;
+    transition: background 0.15s ease;
+}
+
+#theme-toggle:hover {
+    background: var(--tertiary);
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.pagination a {
+    font-weight: 500;
+    color: var(--secondary);
+}
+
+.pagination a:hover {
+    color: var(--primary);
+}
+
+/* Tag/category styling */
+.tag-entry {
+    padding: 1rem 0;
+}
+
+.terms-tags a {
+    background: var(--tertiary);
+    color: var(--primary);
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: background 0.15s ease;
+}
+
+.terms-tags a:hover {
+    background: var(--accent);
+    color: white;
+}
+
+/* Search */
+#searchbox input {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--theme);
+}
+
+#searchbox input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+/* Reading time and meta info */
+.post-meta svg {
+    opacity: 0.6;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    font-size: 0.8125rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.breadcrumbs a {
+    color: var(--secondary);
+}
+
+.breadcrumbs a:hover {
+    color: var(--primary);
+}
+
+/* Table of contents */
+.toc {
+    background: var(--code-bg);
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.toc details summary {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Lists in content */
+.post-content ul,
+.post-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.post-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Horizontal rule */
+hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2rem 0;
+}
+
+/* Images */
+.post-content img {
+    border-radius: 6px;
+    margin: 1.5rem 0;
+}
+
+/* Selection color */
+::selection {
+    background: var(--accent);
+    color: white;
+}
+
+/* Remove list background on homepage */
+.list {
+    background: var(--theme);
+}
+
+.dark.list {
+    background: var(--theme);
+}

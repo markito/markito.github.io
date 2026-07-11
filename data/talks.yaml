@@ -1,0 +1,19 @@
+# Talks shown under `ls ./talks`.
+conferences:
+  - FOSDEM 2016 — Brussels
+  - ApacheCon 2015 — Austin
+  - OSCON 2015 — Portland
+  - QCon Rio — Rio de Janeiro
+  - SpringOne2GX 2015 — Washington
+  - In-Memory Summit — San Francisco
+videos:
+  - title: Deep Research agent demo — NVIDIA
+    url: https://www.youtube.com/watch?v=KNd7T3MgqZc
+  - title: theCUBE — KubeCon 2018
+    url: https://www.youtube.com/watch?v=azQqHJM_q04
+  - title: Knative, Kubernetes & Istio panel
+    url: https://www.youtube.com/watch?v=f0nhzfbWdTM
+  - title: Knative on Kubernetes — DevNation
+    url: https://www.youtube.com/watch?v=qdUxni96n3s
+  - title: Distributed In-Memory with Apache Geode
+    url: https://www.youtube.com/watch?v=vmkG2jjmA3Q

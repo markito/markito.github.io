@@ -1,0 +1,11 @@
+<footer id="contact" class="footer">
+  <div class="prompt"><span class="user">markito</span>@io <span class="path">:~$</span> ./contact <span class="cursor">▏</span></div>
+  <div class="contact-links">
+    {{ with .Site.Params.social.linkedin }}<a class="accent" href="{{ . }}" target="_blank" rel="noopener">LinkedIn</a>{{ end }}
+    {{ with .Site.Params.social.github }}<a href="{{ . }}" target="_blank" rel="noopener">GitHub</a>{{ end }}
+    {{ with .Site.Params.social.twitter }}<a href="{{ . }}" target="_blank" rel="noopener">X</a>{{ end }}
+    {{ with .Site.Params.social.medium }}<a href="{{ . }}" target="_blank" rel="noopener">Medium</a>{{ end }}
+    {{ with .Site.Params.resume }}<a href="{{ . | relURL }}" target="_blank" rel="noopener">Résumé ↓</a>{{ end }}
+  </div>
+</footer>
+<div class="copyright">© {{ now.Year }} {{ .Site.Params.name }} · built with Hugo</div>

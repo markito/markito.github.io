@@ -1,0 +1,13 @@
+# Books shown under `ls ./publications/books`. Covers live in static/img/.
+- title: The Java EE 7 Tutorial, Vol. 1
+  cover: /img/javaeevol1.jpg
+  url: https://www.amazon.com/s?k=The+Java+EE+7+Tutorial+Volume+1
+- title: The Java EE 7 Tutorial, Vol. 2
+  cover: /img/javaeevol2.jpg
+  url: https://www.amazon.com/s?k=The+Java+EE+7+Tutorial+Volume+2
+- title: "Java EE 6 Tutorial: Advanced Topics"
+  cover: /img/cover_javaee6advancedtopics.png
+  url: https://www.amazon.com/s?k=The+Java+EE+6+Tutorial+Advanced+Topics
+- title: Getting Started with WebLogic 12c
+  cover: /img/weblogic_server_12c-cover.png
+  url: https://www.amazon.com/s?k=Getting+Started+with+Oracle+WebLogic+Server+12c

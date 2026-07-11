@@ -1,0 +1,14 @@
+{{ define "main" }}
+<article class="post-full">
+  <div class="prompt post-back"><a href="{{ "/#writing" | relURL }}"><span class="user">markito</span>@io <span class="path">:~/writing$</span> cd ..</a></div>
+  <div class="post-wrap">
+    <div class="post-meta">{{ .Date.Format "2006-01-02" }}{{ with .Params.tags }}&nbsp;&nbsp;·&nbsp;&nbsp;{{ delimit . " · " }}{{ end }}</div>
+    <h1 class="post-h1">{{ .Title }}</h1>
+    <div class="rule"></div>
+    <div class="post-body">
+      {{ .Content }}
+    </div>
+    <div class="prompt post-back-b"><a href="{{ "/#writing" | relURL }}">← back to ./writing</a> <span class="cursor">▏</span></div>
+  </div>
+</article>
+{{ end }}

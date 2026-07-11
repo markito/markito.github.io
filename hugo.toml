@@ -1,0 +1,55 @@
+baseURL = "https://markito.io/"
+languageCode = "en-us"
+title = "William Markito Oliveira"
+enableRobotsTXT = true
+
+# Use pretty permalinks for posts: /writing/my-post/
+[permalinks]
+  posts = "/writing/:slug/"
+
+[params]
+  # ---- Identity ----
+  name       = "William Markito Oliveira"
+  firstLine  = "William"
+  accent     = "Markito"
+  lastLine   = "Oliveira"
+  tagline    = "product · platforms · builder"
+  location   = "austin, tx"
+  current    = "@ nvidia"
+
+  # ---- about.md (shown on the home page) ----
+  lede = "I build platforms and the teams behind them — turning distributed-systems fundamentals into products developers actually want to use, from early-stage startups to the Fortune 50."
+  about = "Two decades across product management, platform engineering, and AI/ML infrastructure. Open-source contributor, conference speaker, and co-author of published technical books. Executive MBA, McCombs; Executive Certificate, MIT Sloan."
+  certs = "CSPO · Pragmatic Marketing III · AWS Cloud Practitioner · GCP Anthos · Oracle Java EE 6"
+  langs = "English · Portuguese"
+
+  # ---- Links (edit these) ----
+  resume = "/resume.pdf"
+
+  [params.social]
+    linkedin = "https://www.linkedin.com/in/markito"
+    github   = "https://github.com/markito"
+    twitter  = "https://twitter.com/william_markito"
+    medium   = "https://medium.com/@markito"
+
+# Menu shown in the top terminal bar
+[menu]
+  [[menu.main]]
+    name = "work"
+    url  = "/#experience"
+    weight = 1
+  [[menu.main]]
+    name = "writing"
+    url  = "/#publications"
+    weight = 2
+  [[menu.main]]
+    name = "talks"
+    url  = "/#talks"
+    weight = 3
+  [[menu.main]]
+    name = "contact"
+    url  = "/#contact"
+    weight = 4
+
+[markup.goldmark.renderer]
+  unsafe = true

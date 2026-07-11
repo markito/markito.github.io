@@ -1,0 +1,10 @@
+<header class="topbar">
+  <div class="dots" aria-hidden="true"><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span></div>
+  <a class="host" href="{{ "/" | relURL }}">markito@io: ~</a>
+  <nav class="nav">
+    {{ range .Site.Menus.main }}
+      <a href="{{ .URL | relURL }}"{{ if eq .Name "contact" }} class="accent"{{ end }}>{{ .Name }}</a>
+    {{ end }}
+    <button id="theme-toggle" class="theme-btn" type="button" aria-label="Toggle color theme">$ theme --<span id="theme-label">light</span></button>
+  </nav>
+</header>

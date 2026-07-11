@@ -1,0 +1,93 @@
+{{ define "main" }}
+{{ $p := .Site.Params }}
+
+<!-- hero -->
+<section class="hero">
+  <div class="hero-card">
+    <div class="hero-portrait"><img src="{{ "images/profile.png" | relURL }}" alt="{{ $p.name }}"></div>
+    <div class="hero-copy">
+      <div class="prompt"><span class="user">markito</span>@io <span class="path">:~$</span> whoami</div>
+      <h1 class="name">{{ $p.firstLine }} <em>{{ $p.accent }}</em><br>{{ $p.lastLine }}</h1>
+      <div class="hero-rule"></div>
+      <div class="tagline">{{ $p.tagline }}<br>{{ $p.location }}&nbsp;&nbsp;//&nbsp;&nbsp;{{ $p.current }}</div>
+    </div>
+  </div>
+</section>
+
+<!-- about -->
+<section class="sec">
+  <div class="prompt"><span class="user">markito</span>@io <span class="path">:~$</span> cat about.md</div>
+  <p class="lede">{{ $p.lede }}</p>
+  <p class="body-copy">{{ $p.about }}</p>
+  <div class="creds">
+    <div><span class="c-sign">$</span> cat certs.txt&nbsp;&nbsp;<span class="c-val">{{ $p.certs }}</span></div>
+    <div><span class="c-sign">$</span> cat langs.txt&nbsp;&nbsp;<span class="c-val">{{ $p.langs }}</span></div>
+  </div>
+</section>
+
+<!-- experience -->
+<section id="experience" class="sec anchor">
+  <div class="prompt"><span class="user">markito</span>@io <span class="path">:~$</span> ls ./experience</div>
+  <div class="xp">
+    {{ range .Site.Data.experience }}
+      <div class="xp-row"><div class="xp-top"><span class="xp-co">{{ .company }} <span class="xp-role">· {{ .role }}</span></span><span class="xp-year">{{ .year }}</span></div>{{ with .outcome }}<div class="xp-outcome">{{ . }}</div>{{ end }}</div>
+    {{ end }}
+  </div>
+</section>
+
+<!-- writing -->
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ if $posts }}
+<section id="writing" class="sec anchor">
+  <div class="prompt-row">
+    <div class="prompt"><span class="user">markito</span>@io <span class="path">:~$</span> ls ./writing</div>
+    <span class="count">{{ len $posts }} posts</span>
+  </div>
+  <div class="posts">
+    {{ range $posts }}
+      <a class="post-link" href="{{ .RelPermalink }}">
+        <div class="post-head">
+          <span class="post-date">{{ .Date.Format "2006-01-02" }}</span>
+          <span class="post-title">{{ .Title }}</span>
+        </div>
+        {{ with .Summary }}<div class="post-sum">{{ . | plainify | truncate 160 }}</div>{{ end }}
+        {{ with .Params.tags }}<div class="post-tags">{{ delimit . " · " }}</div>{{ end }}
+      </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+<!-- publications -->
+<section id="publications" class="sec anchor">
+  <div class="prompt"><span class="user">markito</span>@io <span class="path">:~$</span> ls ./publications/books</div>
+  <div class="books">
+    {{ range .Site.Data.books }}
+      {{ if .url }}<a class="book" href="{{ .url }}" target="_blank" rel="noopener"><img src="{{ .cover | relURL }}" alt="{{ .title }}"><div class="book-cap">{{ .title }} ↗</div></a>{{ else }}<div class="book"><img src="{{ .cover | relURL }}" alt="{{ .title }}"><div class="book-cap">{{ .title }}</div></div>{{ end }}
+    {{ end }}
+  </div>
+  <div class="prompt prompt-mt"><span class="user">markito</span>@io <span class="path">:~$</span> ls ./publications/articles</div>
+  <div class="articles">
+    {{ range .Site.Data.articles }}
+      <a class="article" href="{{ .url }}" target="_blank" rel="noopener">{{ .title }} <span class="yr">’{{ .year }}</span></a>
+    {{ end }}
+  </div>
+</section>
+
+<!-- talks -->
+<section id="talks" class="sec anchor">
+  <div class="prompt"><span class="user">markito</span>@io <span class="path">:~$</span> ls ./talks</div>
+  <div class="talks">
+    <div>
+      <div class="talk-head">Conferences</div>
+      <div class="talk-conf">{{ range .Site.Data.talks.conferences }}{{ . }}<br>{{ end }}</div>
+    </div>
+    <div>
+      <div class="talk-head">Video</div>
+      {{ range .Site.Data.talks.videos }}
+        <a class="talk-vid" href="{{ .url }}" target="_blank" rel="noopener">{{ .title }} ↗</a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

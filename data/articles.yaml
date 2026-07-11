@@ -1,0 +1,22 @@
+# Articles shown under `ls ./publications/articles`.
+- title: Add a Specialized Deep Research Skill to Agent Harnesses
+  url: https://developer.nvidia.com/blog/add-a-specialized-deep-research-skill-to-agent-harnesses/
+  year: "26 · nvidia"
+- title: Red Hat & Google on Knative for hybrid serverless
+  url: https://www.redhat.com/en/blog/red-hat-collaborates-google-and-others-knative-deliver-hybrid-serverless-workloads-enterprise
+  year: "18"
+- title: State of Serverless in Kubernetes
+  url: https://blog.openshift.com/state-of-serverless-in-kubernetes-knative-and-openshift-cloud-functions/
+  year: "18"
+- title: Reference Architecture for Real-Time Stock Prediction
+  url: https://content.pivotal.io/blog/an-open-source-reference-architecture-for-real-time-stock-prediction
+  year: "15"
+- title: "Java EE 7: Getting Started with Web Applications"
+  url: http://www.informit.com/articles/article.aspx?p=2210833
+  year: "14"
+- title: "WebLogic RESTful Management: CLI to JavaFX"
+  url: https://www.oracle.com/technetwork/articles/soa/oliveira-wls-rest-javafx-1723982.html
+  year: "12"
+- title: Oracle Enterprise Gateway Integration
+  url: https://www.oracle.com/technetwork/articles/soa/oeg-owsm-1562313.html
+  year: "12"

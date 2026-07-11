@@ -1,0 +1,33 @@
+# Roles shown under `ls ./experience`. Newest first.
+- company: NVIDIA
+  role: Enterprise AI Agents
+  year: "2026"
+  outcome: Deep-research skills for enterprise agent harnesses.
+- company: webAI
+  role: VP, Platform
+  year: "2025"
+  outcome: Gateway pivot unlocked a global bank's production deploy.
+- company: General Motors
+  role: Director, PM
+  year: "2023"
+  outcome: OTA to 3M vehicles in 7 months · 0.04% failure rate.
+- company: Apple
+  role: Head of Product, Cloud
+  year: "2021"
+  outcome: "Multi-year roadmap: compute, storage, developer portal."
+- company: Red Hat
+  role: Sr. Manager, OpenShift
+  year: "2017"
+  outcome: Serverless (Knative) & Service Mesh strategy + GTM.
+- company: Pivotal
+  role: Principal PM
+  year: "2013"
+  outcome: In-memory data grid (GemFire) + open-source community.
+- company: Oracle
+  role: Senior Technologist
+  year: "2009"
+  outcome: "Fusion Middleware: WebLogic, SOA Suite, Coherence."
+- company: BEA · IBM
+  role: Architect
+  year: "2005"
+  outcome: SOA reference implementations & enterprise integration.
