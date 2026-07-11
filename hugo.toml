@@ -2,6 +2,7 @@ baseURL = "https://markito.io/"
 languageCode = "en-us"
 title = "William Markito Oliveira"
 enableRobotsTXT = true
+googleAnalytics = "UA-132475739-1"
 
 # Use pretty permalinks for posts: /writing/my-post/
 [permalinks]
